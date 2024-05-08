@@ -2,7 +2,7 @@
 # def - palavra resevada do python para criação de uma função
 # nome_da_funcao - nome dado a função
 # ( ) - local onde declaro os parametros
-# : - finaliza a escrita da função, na proxima linha com indentação de quatro espaços começa o bloco de código da função
+# : - dois pontos finaliza a escrita da função, na proxima linha com indentação de quatro espaços começa o bloco de código da função
 
 # função sem parametro
 def soma_dois_numeros():

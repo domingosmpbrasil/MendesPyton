@@ -16,16 +16,16 @@
 
 ganho_por_hora = float(input("Digite aqui quanto você ganha por hora: "))
 horas_por_dia = int(8)
-desconto_ir = float(11)
-desconto_inss = float(8)
-desconto_sindicato = float(5)
+desconto_ir = 11.0 / 100
+desconto_inss = 8.0 / 100
+desconto_sindicato = 5.0 / 100
 
 
-salario_bruto = float(ganho_por_hora * horas_por_dia) * 22
-valor_do_ir = float(desconto_ir * salario_bruto) / 100
-valor_inss = float(desconto_inss * salario_bruto) / 100
-valor_sindicato = float(desconto_sindicato * salario_bruto) / 100
-valor_salario_liquido = float(salario_bruto - valor_do_ir - valor_inss - valor_sindicato)
+salario_bruto = (ganho_por_hora * horas_por_dia) * 22
+valor_do_ir = (desconto_ir * salario_bruto)
+valor_inss = (desconto_inss * salario_bruto)
+valor_sindicato = (desconto_sindicato * salario_bruto)
+valor_salario_liquido = salario_bruto - (valor_do_ir + valor_inss + valor_sindicato)
 
 
 print(f'Seu salário bruto mensal é de: {salario_bruto}, ------ você vai pagar de imposto de renda: {valor_do_ir}, ------ o valor descontado do INSS é de: {valor_inss}, ------ o desconto do sindicato é de: {valor_sindicato}, ------ Seu salário líquido é de: {valor_salario_liquido:.2f}')
